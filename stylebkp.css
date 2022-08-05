@@ -1,0 +1,20 @@
+nav{
+    background-color: aquamarine;
+    text-align: left;
+    }
+    nav li{
+        display:inline-block;
+        padding:10px;
+        border: 3px solid mediumturquoise;
+        margin: 5px;
+        color: darkblue;
+        box-shadow: 10px 10px 15px rgb(146, 142, 142);
+        border-radius: 15%;
+    }
+    
+    .Navigatie{
+        top:0px 
+    }
+    nav ul{
+        list-style: none;
+    }

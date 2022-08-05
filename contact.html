@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" id="contact">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center">Oxidiu</a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="despre.html">Despre</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="contact2.html">Contact Materialyze</a></li>
+          </ul>
+        </div>
+      </nav>
+    <h1>Contact</h1>
+    <form>
+        <input type="text" name="nume" placeholder="Numele complet" required>
+        <input type="email" name="email" required placeholder="E-mail-ul">
+        <input type="tel" name="telefon" placeholder="Telefon: (0000) 000 000" pattern="[\(]\d{4}[\)]\d{3}[\-]\d{3}" required>
+        <textarea name="mesajContact" placeholder="Mesajul tău"></textarea>
+        <button type="submit">Trimite</button>
+    </form>
+</body>
+</html>

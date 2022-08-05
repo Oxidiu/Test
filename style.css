@@ -1,0 +1,233 @@
+.Navigatie{
+    color:rgb(20, 220, 207);
+}
+nav{
+    background-color: aquamarine;
+    text-align: left;
+    }
+        
+    .Navigatie{
+        top:0px 
+    }
+    nav ul{
+        list-style: none;
+    }
+h1{
+    text-align: center;
+    color: darkblue;
+    text-shadow: 4px 4px 5px cornflowerblue;
+}
+h2{
+    color: darkblue;
+}
+#introducere{
+    color: midnightblue;
+}
+.container{
+    border: 10px dashed cyan;
+    margin-left: 10px;
+    padding: 10px;
+}
+a{
+    text-decoration-line: none;
+}
+
+.circleImage{
+    border-radius: 50%;
+
+}
+img{
+    box-shadow: 10px 10px 15px rgb(146, 142, 142);
+}
+.Box{
+     height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 238);
+    margin: 5px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid darkcyan;
+    padding: 6px;
+    justify-content: center;
+}
+#flexbox{
+    
+}
+#Boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+#Box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#Box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background:radial-gradient(circle, blue, aquamarine, aqua, rgb(4, 253, 153), greenyellow, green, red, yellow, purple, orange, blue, green, aqua, aquamarine, blue, rgb(5, 5, 120), rgb(255, 0, 234), green, lightgreen, blue,aqua, blue, aqua, blue, aqua, aquamarine, aqua, aquamarine, aqua)
+
+}
+#Box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: shrink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#Box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: changeColors;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#Box5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: move;
+    position: relative;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#despre{
+    background-image: url(https://i.pinimg.com/originals/80/c2/22/80c2220516e93a9a9b5f861d74057681.jpg);
+}
+
+.contactBox{
+    display: flex;
+    justify-content: center;
+    
+}
+@keyframes fadeInOut {
+   0%{
+    opacity: 1;
+   } 
+   50%{
+    opacity: 0;
+   }
+   100%{
+    opacity:1;
+ } 
+}
+@keyframes rotation {
+0% {transform: rotate(0deg);}
+25% {transform: rotate(90deg);}
+50% {transform: rotate(180deg);}
+75% {transform: rotate(270deg);}
+100% {transform: rotate(360deg);}
+}
+
+@keyframes shrink{
+    0%{transform: scale(1);}
+    50%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+@keyframes changeColors {
+    0%{background-color: aqua;}
+    25%{background-color: rgb(81, 255, 0);}
+    50%{background-color: rgb(200, 255, 0);}
+    75%{background-color: rgb(255, 25, 0);}
+    100%{background-color: rgb(0, 42, 255);}
+}
+
+@keyframes move {
+    0%{left: 0px; top: 0px;}
+    25%{left: 20px; top: 0px;}
+    50%{left: 20px; top: 20px;}
+    75%{left: 0px; top: 20px;}
+    100%{left: 0px; top: 0px;}
+}
+   form input, textarea, button{
+    display: block;
+    margin: 20px;
+   }
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(10, [col] 180px ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: rgba(255, 255, 255, 0.534);
+    color: #444;
+  }
+
+.box {
+    background-color: #444;
+    color: rgba(255, 255, 255, 0.571);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+  }
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    background-color: rgba(25, 235, 235, 0.5);
+  }
+.b {
+    grid-column: col 3 / span  3 ;
+    grid-row: row ;
+    background-color: rgba(25, 235, 235, 0.5);
+  }
+.c {
+    grid-column: col / span 2 ;
+    grid-row: row 2 ;
+    background-color: rgba(25, 235, 235, 0.5);
+  }
+.d {
+    grid-column: col 2 / span  3 ;
+    grid-row: row 2 ;
+    z-index: 15;
+    background-color: rgba(25, 235, 235, 0.5);
+  }
+
+.e {
+    grid-column: col / span  5;
+    grid-row: row 3;
+    background-color: rgba(25, 235, 235, 0.5);
+  }
+
+.f {
+    grid-column: col 3 / span 2;
+    grid-row: row 2  ;
+    background-color: rgba(25, 235, 235, 0.5);
+    z-index: 20;
+  }
+.g {
+    grid-column: col 4 / span 2;
+    grid-row: row 2  ;
+    background-color: rgba(25, 235, 235, 0.5);
+    z-index: 25;
+  }
+.h {
+    grid-column: col 6 / span 5;
+    grid-row: row / span 3;
+    background-color: rgba(25, 235, 235, 0.5);
+}
