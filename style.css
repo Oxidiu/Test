@@ -1,10 +1,13 @@
+
 .Navigatie{
     color:rgb(20, 220, 207);
+    
 }
 nav{
     background-color: aquamarine;
     text-align: left;
-    }
+       
+}
         
     .Navigatie{
         top:0px 
@@ -12,6 +15,12 @@ nav{
     nav ul{
         list-style: none;
     }
+.nav-wrapper {
+    display:flex
+}
+.content{
+    margin: 1%;
+}
 h1{
     text-align: center;
     color: darkblue;
@@ -31,13 +40,17 @@ h2{
 a{
     text-decoration-line: none;
 }
-
+#profil{
+    display:flex;
+    justify-content: center;
+}
 .circleImage{
     border-radius: 50%;
-
+    height: -50%;
 }
 img{
     box-shadow: 10px 10px 15px rgb(146, 142, 142);
+    
 }
 .Box{
      height: 200px;
@@ -79,8 +92,10 @@ img{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background:radial-gradient(circle, blue, aquamarine, aqua, rgb(4, 253, 153), greenyellow, green, red, yellow, purple, orange, blue, green, aqua, aquamarine, blue, rgb(5, 5, 120), rgb(255, 0, 234), green, lightgreen, blue,aqua, blue, aqua, blue, aqua, aquamarine, aqua, aquamarine, aqua)
-
+    background:radial-gradient(circle, blue, aquamarine, aqua, rgb(4, 253, 153), greenyellow, green, red, yellow, purple, orange, blue, green, aqua, aquamarine, blue, rgb(5, 5, 120), rgb(255, 0, 234), green, lightgreen, blue,aqua, blue, aqua, blue, aqua, aquamarine, aqua, aquamarine, aqua);
+    height: 150px;
+    width: 150px;
+    
 }
 #Box3{
     display: flex;
